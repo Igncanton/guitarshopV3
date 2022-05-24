@@ -1,0 +1,38 @@
+/* PRODUCT PAGE */
+.indexProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+
+.productsContainer {
+    display: grid;
+    grid-template-areas:
+        "gridOne    gridTwo"
+        "gridThree  gridFour";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.gridOne {
+    grid-area: gridOne;
+}
+
+.gridTwo {
+    grid-area: gridTwo;
+}
+
+.gridThree {
+    grid-area: gridThree;
+}
+
+.gridFour {
+    grid-area: gridFour;
+}

@@ -1,0 +1,28 @@
+/* ABOUT US PAGE */
+.indexAboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin: 3rem 0;
+    }
+
+    table {
+        margin: 4rem 0;
+        border: 1px solid black;
+
+        tr td {
+            padding: 0 2rem;
+        }
+    }
+}
+
+.containerAboutUsText {
+    padding: 0 5rem;
+
+    h2 {
+        margin: 1rem 0;
+    }
+}

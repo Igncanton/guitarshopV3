@@ -1,0 +1,364 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* General styles */
+html {
+  font-family: 'Poppins', sans-serif; }
+
+a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; }
+
+/* Nav bar */
+nav {
+  display: flex;
+  border-bottom: 2px solid #FF9E08; }
+  nav button {
+    background-color: #FF9E08;
+    border-style: none;
+    border-radius: 4px;
+    height: 2.3rem;
+    width: 5.5rem; }
+    nav button a {
+      color: whitesmoke; }
+      nav button a:hover {
+        color: #252525; }
+
+/* Bootstrap overwrites */
+#navbarLinks {
+  align-items: center; }
+  #navbarLinks li {
+    margin: 0 0.7rem; }
+
+#btnClose {
+  background-color: #FF9E08; }
+
+.nav-link:hover {
+  color: #FF9E08 !important; }
+
+#active-link {
+  color: #FF9E08 !important;
+  font-weight: bolder; }
+
+#navbar-toggler {
+  background-color: #FF9E08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 3.8rem; }
+
+#contact-active {
+  text-decoration: underline 1.5px solid; }
+
+/* Main Section */
+.indexMain {
+  margin: 2rem 0; }
+  .indexMain h1 {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .indexMain img {
+    margin: 1rem auto;
+    display: block;
+    border-radius: 5px; }
+
+.mainBtnContainer {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center; }
+
+.btnMainPrimary {
+  background-color: #FF9E08;
+  border-style: none;
+  border-radius: 4px;
+  height: 2rem;
+  width: 8rem;
+  margin-right: 1rem; }
+  .btnMainPrimary a {
+    color: whitesmoke; }
+
+.btnMainSecondary {
+  background-color: white;
+  border-style: none;
+  border-radius: 4px;
+  height: 2rem;
+  width: 8rem;
+  border: 1px solid #FF9E08;
+  margin-left: 1rem; }
+  .btnMainSecondary a {
+    color: #252525; }
+
+/* Complementary Section */
+.indexSection {
+  margin-top: 2rem; }
+  .indexSection h2 {
+    text-align: center; }
+
+/* Cards */
+.cardsContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sectionCard {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem; }
+  .sectionCard img {
+    width: 80%; }
+  .sectionCard p {
+    width: 90%;
+    text-align: center;
+    margin: 1rem 0; }
+  .sectionCard h3 {
+    margin-bottom: 1rem; }
+  .sectionCard button {
+    background-color: #FF9E08;
+    border-style: none;
+    border-radius: 4px;
+    height: 2rem;
+    width: 7rem; }
+    .sectionCard button a {
+      color: whitesmoke; }
+
+/* Footer Section */
+footer {
+  background-color: #FF9E08;
+  margin-top: 6rem;
+  /* Copyright disclaimer */ }
+  footer h2 {
+    padding: 2rem 0 0 3.5rem; }
+  footer h6 {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: lighter;
+    padding: 1.5rem 0;
+    margin-bottom: 0 !important; }
+
+/* Footer Site Map Section */
+.gridContainer {
+  display: grid;
+  grid-template-areas: "one    two    three   four";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  padding: 1rem 1rem 2rem 1rem; }
+  .gridContainer-elementOne {
+    grid-area: one;
+    text-align: center; }
+  .gridContainer-elementTwo {
+    grid-area: two;
+    text-align: center; }
+  .gridContainer-elementThree {
+    grid-area: three;
+    padding-left: 2rem; }
+  .gridContainer-elementFour {
+    grid-area: four; }
+
+.siteMapSection {
+  display: flex;
+  flex-direction: column; }
+  .siteMapSection a {
+    color: whitesmoke;
+    margin-left: 1rem; }
+    .siteMapSection a:hover {
+      color: #252525 !important; }
+  .siteMapSection h4 {
+    padding-top: 0.2rem;
+    margin-bottom: 1.7rem; }
+
+/* PRODUCT PAGE */
+.indexProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .indexProducts h1 {
+    text-align: center;
+    margin: 2rem 0; }
+
+.productsContainer {
+  display: grid;
+  grid-template-areas: "gridOne    gridTwo" "gridThree  gridFour";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem; }
+
+.gridOne {
+  grid-area: gridOne; }
+
+.gridTwo {
+  grid-area: gridTwo; }
+
+.gridThree {
+  grid-area: gridThree; }
+
+.gridFour {
+  grid-area: gridFour; }
+
+/* MEDIA PAGE */
+.indexMedia {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .indexMedia h1 {
+    margin-bottom: 2rem; }
+
+/* ABOUT US PAGE */
+.indexAboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .indexAboutUs h1 {
+    margin: 3rem 0; }
+  .indexAboutUs table {
+    margin: 4rem 0;
+    border: 1px solid black; }
+    .indexAboutUs table tr td {
+      padding: 0 2rem; }
+
+.containerAboutUsText {
+  padding: 0 5rem; }
+  .containerAboutUsText h2 {
+    margin: 1rem 0; }
+
+/* CONTACT PAGE */
+.indexContact {
+  margin: 3rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .indexContact h1 {
+    margin-bottom: 1rem; }
+  .indexContact iframe {
+    margin-top: 2rem; }
+
+.contactForm {
+  display: flex;
+  flex-direction: column; }
+  .contactForm label {
+    margin: 0.3rem 0; }
+  .contactForm input {
+    margin: 0 1rem; }
+  .contactForm p {
+    margin: 1.5rem 0 0.3rem 0; }
+  .contactForm textarea {
+    margin-bottom: 1rem; }
+  .contactForm__button {
+    padding: 0.5rem 0;
+    background-color: #FF9E08;
+    border-style: none;
+    border-radius: 4px;
+    font-weight: bold; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  /* Index.html */
+  .cardsContainer {
+    flex-direction: column; }
+  .sectionCard {
+    width: 60vw; }
+  /* Products.html */
+  .productsContainer {
+    grid-template-areas: "gridOne" "gridTwo" "gridThree" "gridFour";
+    grid-template-columns: 1fr; }
+    .productsContainer__element {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .productsContainer__element img {
+      width: 90%;
+      margin: 1rem 0; }
+  /* About.html */
+  .indexAboutUs img {
+    width: 90%; }
+  /* Contact.html */
+  .contactForm {
+    width: 90%; }
+  .indexContact iframe {
+    width: 90%; } }
+
+@media screen and (min-width: 992px) {
+  #navbar-toggler {
+    display: none; } }
+
+@media screen and (max-width: 700px) {
+  /* Footer */
+  footer {
+    padding-top: 0.1rem; }
+    footer h2 {
+      padding: 0;
+      text-align: center;
+      margin: 2rem; }
+  .gridContainer {
+    grid-template-areas: "one" "two" "three" "four";
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .gridContainer-elementThree {
+      padding: 0rem; }
+  .siteMapSection {
+    justify-content: center;
+    align-items: center; }
+    .siteMapSection a {
+      margin: 0; }
+    .siteMapSection h4 {
+      padding: 0;
+      margin: 0; }
+  .gridContainer-elementFour {
+    margin-bottom: 2rem; }
+  footer h6 {
+    padding: 1.5rem 1rem; }
+  /* Media.html */
+  .indexMedia iframe {
+    width: 90%; }
+  /* About.html */
+  .indexAboutUs table {
+    width: 90%;
+    font-weight: 0.5rem; }
+  .containerAboutUsText h2 {
+    margin: 1rem 0; }
+  .indexAboutUs table tr td {
+    padding: 0 0.5rem; } }
+
+@media screen and (max-width: 530px) {
+  /* Contact.html */
+  .contactForm {
+    justify-content: center;
+    align-items: center; }
+    .contactForm label {
+      display: block; }
+    .contactForm input {
+      display: block;
+      margin: 0; }
+    .contactForm textarea {
+      width: 98%; }
+    .contactForm__button {
+      padding: 0.5rem 8rem; } }
+
+@media screen and (max-width: 380px) {
+  nav {
+    padding: 0; } }
+
+@media screen and (max-width: 325px) {
+  /* Contact.html */
+  .contactForm__button {
+    padding: 0.5rem 5rem; } }
+
+@media screen and (max-width: 314px) {
+  .container-fluid {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem; } }

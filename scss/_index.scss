@@ -1,0 +1,246 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    border-bottom: 2px solid #FF9E08;
+
+    button {
+        background-color: #FF9E08;
+        border-style: none;
+        border-radius: 4px;
+        height: 2.3rem;
+        width: 5.5rem;
+
+        a {
+            color: whitesmoke;
+
+            &:hover {
+                color: rgb(37, 37, 37);
+            }
+        }
+    }
+}
+
+/* Bootstrap overwrites */
+#navbarLinks {
+    align-items: center;
+
+    li {
+        margin: 0 0.7rem;
+    }
+}
+
+#btnClose {
+    background-color: #FF9E08;
+}
+
+.nav-link:hover {
+    color: #FF9E08 !important;
+}
+
+#active-link {
+    color: #FF9E08 !important;
+    font-weight: bolder;
+}
+
+#navbar-toggler {
+    background-color: #FF9E08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 3.8rem;
+}
+
+#contact-active {
+    text-decoration: underline 1.5px solid;
+}
+
+/* Main Section */
+.indexMain {
+    margin: 2rem 0;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    img {
+        margin: 1rem auto;
+        display: block;
+        border-radius: 5px;
+    }
+}
+
+.mainBtnContainer {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btnMainPrimary {
+    background-color: #FF9E08;
+    border-style: none;
+    border-radius: 4px;
+    height: 2rem;
+    width: 8rem;
+    margin-right: 1rem;
+
+    a {
+        color: whitesmoke
+    }
+}
+
+.btnMainSecondary {
+    background-color: white;
+    border-style: none;
+    border-radius: 4px;
+    height: 2rem;
+    width: 8rem;
+    border: 1px solid #FF9E08;
+    margin-left: 1rem;
+
+    a {
+        color: rgb(37, 37, 37);
+    }
+}
+
+/* Complementary Section */
+.indexSection {
+    margin-top: 2rem;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+/* Cards */
+.cardsContainer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionCard {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+    img {
+        width: 80%;
+    }
+
+    p {
+        width: 90%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: #FF9E08;
+        border-style: none;
+        border-radius: 4px;
+        height: 2rem;
+        width: 7rem;
+
+        a {
+            color: whitesmoke;
+        }
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #FF9E08;
+    margin-top: 6rem;
+
+    h2 {
+        padding: 2rem 0 0 3.5rem;
+    }
+
+    /* Copyright disclaimer */
+    h6 {
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        font-weight: lighter;
+        padding: 1.5rem 0;
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Footer Site Map Section */
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+        "one    two    three   four"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    padding: 1rem 1rem 2rem 1rem;
+
+    &-elementOne {
+        grid-area: one;
+        text-align: center;
+    }
+
+    &-elementTwo {
+        grid-area: two;
+        text-align: center;
+    }
+
+    &-elementThree {
+        grid-area: three;
+        padding-left: 2rem;
+    }
+
+    &-elementFour {
+        grid-area: four;
+    }
+}
+
+.siteMapSection {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: whitesmoke;
+        margin-left: 1rem;
+
+        &:hover {
+            color: rgb(37, 37, 37) !important;
+        }
+    }
+
+    h4 {
+        padding-top: 0.2rem;
+        margin-bottom: 1.7rem;
+    }
+}
