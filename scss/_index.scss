@@ -20,10 +20,10 @@ a {
 /* Nav bar */
 nav {
     display: flex;
-    border-bottom: 2px solid #FF9E08;
+    border-bottom: 2px solid $primary-color;
 
     button {
-        background-color: #FF9E08;
+        background-color: $primary-color;
         border-style: none;
         border-radius: 4px;
         height: 2.3rem;
@@ -49,20 +49,20 @@ nav {
 }
 
 #btnClose {
-    background-color: #FF9E08;
+    background-color: $primary-color;
 }
 
 .nav-link:hover {
-    color: #FF9E08 !important;
+    color: $primary-color !important;
 }
 
 #active-link {
-    color: #FF9E08 !important;
+    color: $primary-color !important;
     font-weight: bolder;
 }
 
 #navbar-toggler {
-    background-color: #FF9E08;
+    background-color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@ nav {
 }
 
 .btnMainPrimary {
-    background-color: #FF9E08;
+    background-color: $primary-color;
     border-style: none;
     border-radius: 4px;
     height: 2rem;
@@ -115,7 +115,7 @@ nav {
     border-radius: 4px;
     height: 2rem;
     width: 8rem;
-    border: 1px solid #FF9E08;
+    border: 1px solid $primary-color;
     margin-left: 1rem;
 
     a {
@@ -163,7 +163,7 @@ nav {
     }
 
     button {
-        background-color: #FF9E08;
+        background-color: $primary-color;
         border-style: none;
         border-radius: 4px;
         height: 2rem;
@@ -177,7 +177,7 @@ nav {
 
 /* Footer Section */
 footer {
-    background-color: #FF9E08;
+    background-color: $primary-color;
     margin-top: 6rem;
 
     h2 {
