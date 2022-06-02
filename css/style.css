@@ -7,11 +7,11 @@
 
 /* General styles */
 html {
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 a {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 /* Nav bar */
 nav {
@@ -37,11 +37,10 @@ nav {
 #btnClose {
   background-color: #FF9E08; }
 
-.nav-link:hover {
+.nav-link:hover, #active-link {
   color: #FF9E08 !important; }
 
 #active-link {
-  color: #FF9E08 !important;
   font-weight: bolder; }
 
 #navbar-toggler {
@@ -108,9 +107,9 @@ nav {
 .sectionCard {
   width: 30vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 1rem; }
   .sectionCard img {
     width: 80%; }
@@ -217,9 +216,9 @@ footer {
 /* ABOUT US PAGE */
 .indexAboutUs {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .indexAboutUs h1 {
     margin: 3rem 0; }
   .indexAboutUs table {
@@ -276,9 +275,9 @@ footer {
     grid-template-columns: 1fr; }
     .productsContainer__element {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column; }
     .productsContainer__element img {
       width: 90%;
       margin: 1rem 0; }

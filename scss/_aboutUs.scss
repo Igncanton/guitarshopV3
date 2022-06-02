@@ -1,9 +1,7 @@
 /* ABOUT US PAGE */
 .indexAboutUs {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     h1 {
         margin: 3rem 0;

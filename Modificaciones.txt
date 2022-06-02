@@ -1,0 +1,7 @@
+- Agregué las etiquetas de meta data en el head para el description y las keywords;
+
+- Creé un parcial de Mixin donde puse el Mixin que realicé para las propiedades de flex y lo utilizé en todos los lugares donde tenia display: flex, justify-content: center y align-items: center;
+
+- Creé un Map en un parcial de Maps para los tipos de tipografia y lo utilicé con map-get en el index;
+
+- Creé un extend en la linea 62 del index.scss;

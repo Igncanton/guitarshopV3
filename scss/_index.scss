@@ -7,14 +7,16 @@
     padding: 0;
 }
 
+
+
 /* General styles */
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: map-get($textFont, 'fontStyle');
 }
 
 a {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: map-get($textFont, 'fontStyle');
 }
 
 /* Nav bar */
@@ -57,15 +59,13 @@ nav {
 }
 
 #active-link {
-    color: $primary-color !important;
+    @extend .nav-link:hover;
     font-weight: bolder;
 }
 
 #navbar-toggler {
     background-color: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     height: 2.5rem;
     width: 3.8rem;
 }
@@ -135,17 +135,13 @@ nav {
 /* Cards */
 .cardsContainer {
     margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
 
 .sectionCard {
     width: 30vw;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 1rem;
 
     img {

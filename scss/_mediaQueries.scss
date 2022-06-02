@@ -20,10 +20,7 @@
         grid-template-columns: 1fr;
 
         &__element {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex-center flex-direction: column;
         }
 
         &__element img {
