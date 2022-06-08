@@ -20,7 +20,8 @@
         grid-template-columns: 1fr;
 
         &__element {
-            @include flex-center flex-direction: column;
+            @include flex-center;
+            flex-direction: column;
         }
 
         &__element img {
@@ -62,7 +63,6 @@
             margin: 2rem;
         }
     }
-
 
     .gridContainer {
         grid-template-areas:
